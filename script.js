@@ -7,9 +7,9 @@ function toggleMenu(event) {
     const active = nav.classList.contains('active');
     event.currentTarget.setAttribute('aria-expanded', 'active');
     if (active) {
-        event.currentTarget.setAttribute('arial-label','Fechar Menu');
+        event.currentTarget.setAttribute('arial-label', 'Fechar Menu');
     } else {
-        event.currentTarget.setAttribute('arial-label','Abrir Menu');
+        event.currentTarget.setAttribute('arial-label', 'Abrir Menu');
     }
 }
 
@@ -20,20 +20,20 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 // SLIDER SCRIPT
 
-let count= 1;
+let count = 1;
 document.getElementById("radio1").checked = true;
 
-setInterval( function(){
+setInterval(function () {
     nextImage();
 }, 5000)
 
-function nextImage(){
+function nextImage() {
     count++;
-    if(count>8){
-        count= 1;
+    if (count > 8) {
+        count = 1;
     }
 
-document.getElementById("radio"+count).checked = true;
+    document.getElementById("radio" + count).checked = true;
 
 }
 
