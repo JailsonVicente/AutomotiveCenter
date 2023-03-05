@@ -1,4 +1,4 @@
-# Òla, bem vindo ao meu primeiro projeto de autoria própria!!
+# Ola, bem vindo ao meu primeiro projeto de autoria própria!!
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## Está é uma página de contato para a empresa de meus familiares, eles tem um centro automotivo.
 Foquei em funcionalidades simples como botões que redirecionam diretamente para o Whatsapp da empresa, link para redes sociais,e integracão com o google maps.
