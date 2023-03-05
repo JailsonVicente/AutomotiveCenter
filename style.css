@@ -6,26 +6,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 @media screen and (max-width: 428px) {
-    main {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        background: url(./Assets/mobile-background.png);
-        background-repeat: no-repeat;
+    #home {
+        background-image: url(./Assets/pexels-juan-montes-12061171.jpg);
         background-size: cover;
+        background-position: top 0;
+    }
+    #service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background-image: url(./Assets/pexels-pixabay-261985_1-removebg-preview.png);
+        background-repeat: no-repeat;
         background-position: center;
-        overflow: scroll;
+        background-size: 125%;
     }
     #btn-mobile {
         display: block;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 8vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 1);
     }
     #menu {
         display: block;
         position: absolute;
         width: 100%;
-        top: 12vh;
+        top: 10vh;
         right: 0px;
         align-items: center;
         background: #e7e7e7;
@@ -38,10 +50,10 @@
     #nav.active #menu {
         display: flex;
         gap: 30px;
-        height: 90vh;
+        height: 89vh;
         transition: .6s;
         visibility: visible;
-        /* overflow-y: auto; */
+        overflow-y: auto;
         background:rgba(0, 0, 0, 0.907);
         padding-top: 30px;
     }
@@ -56,13 +68,13 @@
         border-top: 4px solid white;
         width: 40px;
         color: white;
+        margin-left: 15px;
     }
     #hamburguer::after,#hamburguer::before {
         content: '';
         display: block;
         width: 40px;
         height: 4px;
-        /* color: white; */
         background: currentColor;
         margin-top: 10px;
         transition: .3s;
@@ -79,7 +91,7 @@
         top: -13px;
     }
     h1 {
-        font-size: 18px;
+        font-size: 28px;
     }
 
     h2 {
@@ -89,16 +101,9 @@
     h3 {
         font-size: 14px;
     }
-
-    #home, #service {
-        height: 25%;
-    }
-
-
-    #contact {
-        height: 50%;
-    }
-
+.menu img {
+    display: none;
+}
 
     #fixo img {
         width: 30px;
@@ -122,33 +127,41 @@
     #nav-icon {
         height: 30px;
     }
-}
+} 
 
 @media screen and (min-width: 430px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 1);
+    }
     main {
             display: flex;
             align-items: center;
             flex-direction: column;
             width: 100%;
-            height: 2020px;
-            background: url(./Assets/tablet-background.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
     }
-
-    #home, #service {
-        height: 25%;
+    #home {
+        background-image: url(./Assets/ferrari\ 2.png);
+        background-size: cover;
     }
-
     #service {
-        backdrop-filter: blur(2px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background-image: url(./Assets/pexels-pixabay-261985_1-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 125%;
     }
-
-    #contact {
-        height: 50%;
-    }
-
     .maps {
         margin: 20px;
     }
@@ -158,19 +171,29 @@
 }
 
 @media screen and (min-width: 1024px) {
-    main {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            max-width: 1440px;
-            height: 2121px;
-            background: url(./Assets/desktop-background.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 1);
     }
-
+    #home {
+        background-image: url(./Assets/ferrari\ 2.png);
+        background-size: cover;
+    }
+    #service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background-image: url(./Assets/pexels-pixabay-261985_1-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
     h1 {
         font-size: 36px;
     }
@@ -181,11 +204,6 @@
 
     h3 {
         font-size: 24px;
-    }
-
-    #home, #service, #contact {
-        width: 100%;
-        height: 33.3%;
     }
 
     #service {
@@ -206,16 +224,19 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background: black;
+    background: rgba(0, 0, 0, 0.927);
     font-family: 'Montserrat', sans-serif;
+    /* overflow-x: hidden; */
+    background: rgb(0, 0, 0);
+background: linear-gradient(340deg, rgba(0, 0, 0, 0.949) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.916) 100%);
 }
 
 header {
     display: flex;
     width: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 
@@ -229,15 +250,15 @@ header {
     text-align: center;
     color: white;
     font-size: 10px;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: center; */
     height: 8vh;
-    width: 95%;
+    width: 100%;
     background: rgba(0, 0, 0, 1);
 }
 
@@ -266,66 +287,88 @@ a {
 }
 
 nav li:hover {
-    background-color: rgba(255, 0, 0, 0.203);
+    border-bottom: solid 2px rgba(255, 0, 0, 0.467);
+}
+
+main {
+    align-items: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    align-items: center;
+    width: 100vw;
     height: 100%;
-}
-
-#btn-budget {
-    height: 40px;
-    width: 200px;
-    border-radius: 30px;
-    font-size: 100%;
-    color: rgba(234, 181, 181, 1);
-    background: rgba(255, 0, 0, 0.467);
-    margin: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: red;
 }
 
 #home {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10%;
+    justify-content: space-between;
+    height: 89vh;
+    width: 100%;
+    padding: 3%;  
+}
 
+.logo {
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+    margin-top: 30px;
 }
 
 .budget {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     text-align: center;
+    margin-bottom: 30vh;
+    margin-top: 60px;
 }
 
-#service {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    gap: 20px;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
+#btn-home {
+    margin-top: 60px;
+    height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(255, 0, 0, 0.478);
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+#btn-home:hover {
+    background-color: rgba(0, 0, 0, 0.518);
+    border: solid 1px rgba(255, 0, 0, 1);
+    box-shadow: 2px 2px 40px rgba(255, 0, 0, 1);
+}
+
+.service-text {
+    position: relative;
+    top: 10px;
+}
+
+.service-text, .slider {
+    z-index: 10;
 }
 
 .slider {
     /* margin: 0  auto; */
-    margin: 40px;
     width: 320px;
     height: 300px;
     overflow: hidden;
     background: rgba(14, 14, 14, 0.62);
     border-radius: 20px;
     box-shadow: 0px 3px 4px rgba(255, 0, 0, 0.3);
+    position: relative;
+    top: 25%;
 }
 
 .slides {
@@ -464,8 +507,30 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    padding: 3%;
+    min-height: 90vh;
+    background-image: url(./Assets/contato-background_2-removebg-preview.png);
+    background-position: right top 150px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+
+#btn-contact {
+    height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(255, 0, 0, 0.478);
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+#btn-contact:hover {
+    background-color: rgba(0, 0, 0, 0.518);
+    border: solid 1px rgba(255, 0, 0, 1);
+    box-shadow: 2px 2px 40px rgba(255, 0, 0, 1);
 }
 
 .contact-text {
@@ -476,6 +541,7 @@ button:hover {
     width: 100%;
 }
 
+
 .contact-text h2 {
     font-size: 20px;
     text-align: left;
@@ -483,9 +549,14 @@ button:hover {
     
 }
 
+#italic-text {
+    margin: 10px;
+}
+
 .maps {
     width: 100%;
     height: 300px;
+    margin: 10px;
 }
 
 #map {
@@ -504,7 +575,7 @@ button:hover {
 footer {
     display: flex;
     width: 100%;
-    height: 60px;
+    height: 10vh;
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 1);
