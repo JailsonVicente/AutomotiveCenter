@@ -1,6 +1,0 @@
-=fazer menu responsivo
-=alterar height das secctions para vh
-=background por secction's ao inves do body/main todo
-=fazer o slide ficar responsivo
-=alterar fontes
-=resolver o hover na versão mobile
