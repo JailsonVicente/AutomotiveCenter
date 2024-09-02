@@ -16,5 +16,5 @@ Foquei em funcionalidades simples como botões que redirecionam diretamente para
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ## Não está perfeito, mas como é o primeiro projeto que desenvolvi sozinho estou muito feliz !  O primeiro de muitos.
 
-[Automotive Center](https://jailsonvicente.github.io/AutomotiveCenter/)
+[Automotive Center]([https://jailsonvicente.github.io/AutomotiveCenter/](https://centroautomotivosc.com.br/))
 
